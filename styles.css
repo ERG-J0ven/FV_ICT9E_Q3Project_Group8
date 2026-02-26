@@ -1,0 +1,36 @@
+#logo{
+    width: 40px;
+}
+
+#foot{
+    display: block;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    position: fixed;
+
+}
+
+#ragajaicon{
+    width: 240px;
+}
+
+#welcome{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+body{
+    background-image:url('highway.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
