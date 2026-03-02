@@ -8,14 +8,7 @@
     <title>Registration</title>
 </head>
 <style>
-    form {
-  border-radius: 5px;
-  background-color: #ffffff85;
-  padding: 20px;
-  width: 500px;
-  position: center;
- 
-}
+    
 
 body {
   background-image: url('https://raw.githubusercontent.com/ERG-J0ven/FV_ICT9E_Q3Project_Group8/refs/heads/main/highestway.png');
@@ -28,31 +21,13 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 100%;
-}s
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a.active {
-  color: white;
 }
 
 
 </style>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href=""><img id="logo" src="ragaja.png" alt=""></a>
     
@@ -68,36 +43,26 @@ body {
         <li class="nav-item">
           <a class="nav-link text-white" href="">Fare Matrix</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="">Schedule</a>
-        </li>
           <li class="nav-item">
           <a class="nav-link text-white" href="">Help</a>
         </li>
       </ul>
 
             <form class="d-flex">
-        <button class="btn btn-primary" type="button">Create Account</button>
+        <button id="creation" class="btn btn-primary" type="button" href="registration.html">
+          <a style="color: white; " href="registration.html">Create Account</a> 
+        </button>
       </form>
     </div>
   </div>
 </nav>
 
 <BR><BR>
-    
-<div class="topnav">
-  <a class="active" href="#Locaton">Location</a>
-  <a href="#Home">Home</a>
-  <a href="#Fare">Fare Matrix</a>
-  <a href="#Sched">Schedule</a>
-  <a href="#Acc">Create Account</a>
-</div>
-      <form action="/action_page.php">
-        <div class="container-sm">
+
+        <div style="background-color: rgb(255, 255, 255, 0.5); border: 2px solid black; border-radius: 12px;   text-align: center;" class="container mt-3">
         <h1>REGISTRATION</h1>
         
-
-        </details>
+        <form  action="/action_page.php">
         
         <img src="https://thumbs.dreamstime.com/b/arabic-business-man-traditional-muslim-hat-placeholder-102337208.jpg" id="pfp">
         <br>
@@ -145,16 +110,21 @@ body {
         placeholder="Enter Password" required>
         
 
-    <br>
-     
-        <input type="submit" id="submit" value="Submit" class="form-control" >
+    <br>  
+
+        <button id="creation" class="btn btn-success" type="button">
+          <a style="color: white; " href="confirmation.html ">Submit</a> 
+        </button>
+    
     </div>
     </form>
+
+    <br>
+
+    <footer id="foot">
+        <p>Gavin Ruiz, Jarvis Joven, Raphael De Vera, 9-Emerald</p>
+      </footer>
     
     
-    
-<script>
-  
-</script>  
 </body>
 </html>
