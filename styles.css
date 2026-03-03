@@ -33,4 +33,11 @@ body{
     background-image:url('highway.png');
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+
+#supporting{
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 2px solid black;
+    border-radius: 12px;
 }
