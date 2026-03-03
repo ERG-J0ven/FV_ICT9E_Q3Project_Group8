@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Sakay Fare Guide</title>
     <style>
         body {
@@ -10,29 +12,8 @@
             margin: 0;
             background-image: url('https://www.wagnerreese.com/content/uploads/2023/04/Highways.jpg');
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
-            min-height: 113vh;
+            
         }
-
-        header, footer {
-            background-color: #080808;
-            color: #faf2f2;
-            padding: 15px 30px;
-            text-align: center;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo img { height: 40px; width: auto; }
-
-        nav a { color: #fdf7f7; margin: 0 10px; text-decoration: none; font-size: 14px; }
 
         main {
             flex: 1;
@@ -91,23 +72,42 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="https://github.com/ERG-J0ven/FV_ICT9E_Q3Project_Group8/blob/main/ragaja.png?raw=true" alt="Logo">
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Schedule</a>
-            <a href="#">Help</a>
-        </nav>
-    </header>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""><img id="logo" src="ragaja.png" alt=""></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a  class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Farematrix.html">Fare Matrix</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="help.html">Help</a>
+        </li>
+      </ul>
+
+            <form class="d-flex">
+        <button id="creation" class="btn btn-primary" type="button" href="registration.html">
+          <a style="color: white; " href="registration.html">Create Account</a> 
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
 
     <main>
         <div class="box">
             <h2> Fare Guide</h2>
             
              <label>Pickup:</label>
-               <select id="pickup">
+               <select class="form-control" id="pickup">
                 <option value="0">North Avenue</option>
                 <option value="2">Quezon Ave</option>
                  <option value="7">Cubao</option>
@@ -116,7 +116,7 @@
             </select>
 
 <label>Destination:</label>
-                   <select id="dropoff">
+                   <select class="form-control" id="dropoff">
                 <option value="0">North Ave</option>
                 <option value="2">Quezon Ave</option>
                 <option value="7">Cubao</option>
@@ -125,7 +125,7 @@
             </select>
  
               <label>Passenger opt:</label>
-              <select id="discount">
+              <select class="form-control" id="discount">
                 <option value="1">Regular</option>
                  <option value="0.8">Senior / PWD / Student (20% Off)</option>
             </select>
@@ -139,9 +139,9 @@
            </div>
            </main>
 
-    <footer>
-        De Vera - Joven - Ruiz / 9 Emerald 2026 
-    </footer>
+    <footer id="foot">
+        <p>Gavin Ruiz, Jarvis Joven, Raphael De Vera, 9-Emerald</p>
+      </footer>
     <script>
         function calculateFare() {
             //   Rates 
@@ -171,12 +171,5 @@
             document.getElementById('displayFare').innerText = "₱ " + finalFare.toFixed(2);
         }
     </script>
-
-
-
-
-
-
-
 </body>
 </html>
